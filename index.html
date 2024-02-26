@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Rainbow</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app-2thwrapper">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/951/original/Untitled-a.jpg?1674997601" alt="Rainbow" />
+          <div class="weather-app">
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-sm-9 ">
+                  <input
+                    type="search"
+                    placeholder="type a city..."
+                    autofocus="on"
+                    autocomplete="off"
+                    class="form-control input1 w-100"
+                    id="city-input"
+                  />
+                </div>
+                <div class="col-sm-3" >
+                  <input type="submit" value="search" class="button w-100" />
+                </div>
+              </div>
+            </form>
+            <div class="overview">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-sm-3 text-center">
+                  <h1 id="city"></h1>
+                </div>
+
+                <div class="col-sm-3 text-center">
+                  <div class="clearfix weather-temperature"> 
+                    <img
+                      src=""
+                      alt="clear"
+                      class="float-left d-none"
+                      id="icon"
+                      width="70px"
+                    />
+                    <strong id="temperature"></strong>
+                    <span class="units">°C</span>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+              <div class="row">
+                <div class="c0l-1"></div>
+                <div class="col-4 date-col"> 
+                  <ul>
+                    <li>
+                      <div id="date"></div>
+                    </li>
+                    <li>
+                      <div id="description">Clear sky</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-4">
+                  <ul>
+                    <li>
+                      Humidity: <span class="humidity" id="humidity"></span> %
+                    </li>
+                    <li>Wind: <span class="wind" id="wind"></span> km/h</li>
+                  </ul>
+                </div>
+                
+                <div class="col-1"></div>
+              </div><hr>
+              <div class="weather-forecast" id="forecast"></div>
+            </div>
+          </div>
+        </div>
+        
+          <small>
+
+              <a href="https://effulgent-gnome-faf4fe.netlify.app/" target="_blank">Open-source code</a> by Samar Joharchi
+           <br>
+                In loving memory of Kian,Iran's Rainbow son
+                
+              </small>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
